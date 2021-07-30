@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đăng kí học viên </title>
+</head>
+<body>
+<div style="background-color: yellow">
+    <div style="background-color: lawngreen">
+        <h1 style="color: blue"> ĐĂNG KÍ HỌC VIÊN </h1>
+    </div>
+
+    <form>
+        <div>
+            <label>Họ và tên</label>
+            <input type="text" name="fullName">
+        </div>
+
+        <div>
+            <label>Ngày sinh</label>
+            <input type="text" name="birthday">
+        </div>
+
+        <div>
+            <label>Giới tính</label>
+            <input type="radio" name="gender"> Nam
+            <input type="radio" name="gender"> Nữ
+        </div>
+        <div>
+            <label>Địa chỉ </label>
+            <textarea rows="4"></textarea>
+        </div>
+        <div>
+            <lable> Lớp</lable>
+            <select>
+                <option varlue="default" selected>--Chọn lóp--</option>
+                <option varlue="class10">Lớp 10</option>
+                <option varlue="class11">Lớp 11</option>
+            </select>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" name="email"/>
+        </div>
+        <div>
+            <label>Điện thoại</label>
+            <input type="text" name="telephoneNumber">
+        </div>
+        <div>
+            <button name="submit" type="submit" > Gửi thông tin</button>
+            <button name="submit" type="reset">Nhập lại</button>
+        </div>
+    </form>
+</div>
+</body>
