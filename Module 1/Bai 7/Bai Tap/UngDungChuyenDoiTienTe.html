@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <form>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th> To Currency</th>
+    </tr>
+    <tr>
+        <td><input type="number
+" id="amount"></td>
+        <td>
+            <select id="option1">
+                <option value="VND">VietNam</option>
+                <option value="DOLLAS">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="option2">
+                <option value="VND">VietNam</option>
+                <option value="DOLLAS">USD</option>
+            </select>
+        </td>
+        <td>
+            <button type="button" onclick="myFunction()">convert</button>
+        </td>
+    </tr>
+        </form>
+</table>
+<br/>
+<p id="result"></p>
+<script>
+    function myFunction() {
+
+        var amount = document.getElementById("amount").value;
+        amount = parseInt(amount);
+        var option1 = document.getElementById("option1").value;
+        var option2 = document.getElementById("option2").value;
+        var result = 0;
+        if(option1 == "VND" && option2 == "DOLLAS"){
+            result = amount / 23000;
+        }
+        if(option1 == "DOLLAS" && option2 == "VND"){
+            result = amount * 23000;
+        }
+
+        document.getElementById("result").innerHTML = "You wrote: " + result;
+    }
+</script>
+</body>
+</html>
