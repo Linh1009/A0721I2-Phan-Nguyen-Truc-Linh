@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh chi so caan nang cua co the</title>
+</head>
+<body>
+<script>
+    var weight = parseInt(prompt('Nhap can nang cua co the'));
+    var height = parseInt(prompt('Nhap chieu cao cua co the'));
+    var bmi = weight / ( height ^ 2 );
+    if (bmi < 18)
+        document.write("Underweight");
+    else if (bmi < 25.0)
+        document.write("Normal");
+    else if (bmi < 30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+</script>
+</body>
+</html>

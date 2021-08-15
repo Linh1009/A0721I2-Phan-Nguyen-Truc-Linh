@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch-case command</title>
+</head>
+<body>
+<input type="number" id="number1">
+<button type="button" onclick="myFunction1()">Tinh so ngay</button>
+<p id='kq'></p>
+<p>And</p>
+<input type="number" id="number2">
+<button type="button" onclick="myFunction2()">Tinh so ngay</button>
+<p id='tn'></p>
+<script>
+    function myFunction1() {
+        let x = document.getElementById('number1').value;
+        x = parseInt(x)
+        switch (x) {
+            case 1 :
+                document.getElementById('kq').innerHTML = 'Thang 1 co 31 ngay';
+                break;
+            case 2 :
+                document.getElementById('kq').innerHTML = 'Thang 2 co 28 hoac 29 ngay';
+                break;
+            case 3 :
+                document.getElementById('kq').innerHTML = 'Thang 3 co 31 ngay';
+                break;
+            case 4 :
+                document.getElementById('kq').innerHTML = 'Thang 4 co 30 ngay';
+                break;
+            case 5 :
+                document.getElementById('kq').innerHTML = 'Thang 5 co 31 ngay';
+                break;
+            case 6 :
+                document.getElementById('kq').innerHTML = 'Thang 6 co 30 ngay';
+                break;
+            case 7 :
+                document.getElementById('kq').innerHTML = 'Thang 7 co 31 ngay';
+                break;
+            case 8 :
+                document.getElementById('kq').innerHTML = 'Thang 8 co 31 ngay';
+                break;
+            case 9 :
+                document.getElementById('kq').innerHTML = 'Thang 9 co 30 ngay';
+                break;
+            case 10 :
+                document.getElementById('kq').innerHTML = 'Thang 10 co 31 ngay';
+                break;
+            case 11 :
+                document.getElementById('kq').innerHTML = 'Thang 11 co 30 ngay';
+                break;
+            case 12 :
+                document.getElementById('kq').innerHTML = 'Thang 12 co 31 ngay';
+                break;
+            default :
+                alert('Nhap so nho hon 12');
+        }
+        }
+    function myFunction2() {
+        let y = document.getElementById('number2').value;
+        y = parseInt(y)
+        switch (y) {
+            case 1 :
+                document.getElementById('tn').innerHTML = 'Thang 1 co 31 ngay';
+                break;
+            case 2 :
+                document.getElementById('tn').innerHTML = 'Thang 2 co 28 hoac 29 ngay';
+                break;
+            case 3 :
+                document.getElementById('tn').innerHTML = 'Thang 3 co 31 ngay';
+                break;
+            case 4 :
+                document.getElementById('tn').innerHTML = 'Thang 4 co 30 ngay';
+                break;
+            case 5 :
+                document.getElementById('tn').innerHTML = 'Thang 5 co 31 ngay';
+                break;
+            case 6 :
+                document.getElementById('tn').innerHTML = 'Thang 6 co 30 ngay';
+                break;
+            case 7 :
+                document.getElementById('tn').innerHTML = 'Thang 7 co 31 ngay';
+                break;
+            case 8 :
+                document.getElementById('tn').innerHTML = 'Thang 8 co 31 ngay';
+                break;
+            case 9 :
+                document.getElementById('tn').innerHTML = 'Thang 9 co 30 ngay';
+                break;
+            case 10 :
+                document.getElementById('tn').innerHTML = 'Thang 10 co 31 ngay';
+                break;
+            case 11 :
+                document.getElementById('tn').innerHTML = 'Thang 11 co 30 ngay';
+                break;
+            case 12 :
+                document.getElementById('tn').innerHTML = 'Thang 12 co 31 ngay';
+                break;
+            default :
+                alert('Nhap so nho hon 12');
+
+        }
+    }
+</script>
+
+</body>
+</html>
