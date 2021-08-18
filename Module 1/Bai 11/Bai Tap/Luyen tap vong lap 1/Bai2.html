@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<label id="tx"></label>
+<script>
+    let x;
+    do {
+        x = parseInt(prompt('Nhập nhiệt độ'));
+        if (x > 100){
+            alert('Bạn Cần giảm nhiệt độ');
+        }
+        else if (x < 20){
+          alert('Bạn cần tăng nhiệt độ');
+        }
+
+    }
+    while (x < 20 || x > 100);
+    document.getElementById('tx').innerHTML = 'Nhiệt độ đạt yêu cầu:' + x;
+</script>
+</body>
+</html>
