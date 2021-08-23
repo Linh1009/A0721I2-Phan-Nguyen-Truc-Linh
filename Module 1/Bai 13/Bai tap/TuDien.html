@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<br>
+<h1>TỪ ĐIỂN</h1>
+<label>Nhập từ bạn cần dịch</label>
+<input type="text" id="dich"></br>
+<button type="button" id="tx" onclick="myFunction()">Dịch</button>
+<script>
+    function myFunction() {
+        var a =document.getElementById('dich').value;
+        var arr1 = ['xe', 'nhà', 'hoa hồng', 'bút'];
+        var arr2 = ['car', 'house', 'rose', 'pen'];
+        if (a == arr1[0]){
+            document.writeln(arr2[0]);
+        }
+        else if (a == arr1[1]){
+            document.writeln(arr2[1]);
+        }
+        else if (a == arr1[2]){
+            document.writeln(arr2[2]);
+        }
+        else if (a == arr1[3]){
+            document.writeln(arr2[3]);
+        }
+        else {
+            document.writeln('Từ bạn nhập không có trong từ điển');
+        }
+    }
+</script>
+</body>
+</html>
