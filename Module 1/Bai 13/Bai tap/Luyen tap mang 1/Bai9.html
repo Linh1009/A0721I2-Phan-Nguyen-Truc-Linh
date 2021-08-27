@@ -6,32 +6,17 @@
 </head>
 <body>
 <script>
-    var Ar1 = [];
-    Ar1[0] = parseInt(prompt('Nhập phần tử 0'));
-    Ar1[1] = parseInt(prompt('Nhập phần tử 1'));
-    Ar1[2] = parseInt(prompt('Nhập phần tử 2'));
-    Ar1[3] = parseInt(prompt('Nhập phần tử 3'));
-    Ar1[4] = parseInt(prompt('Nhập phần tử 4'));
-    Ar1[5] = parseInt(prompt('Nhập phần tử 5'));
-    Ar1[6] = parseInt(prompt('Nhập phần tử 6'));
-    Ar1[7] = parseInt(prompt('Nhập phần tử 7'));
-    Ar1[8] = parseInt(prompt('Nhập phần tử 8'));
-    Ar1[9] = parseInt(prompt('Nhập phần tử 9'));
+    let arr1 = [];
+    for(let i = 0; i < 10; i++) {
+        arr[i] = prompt('Phần tử thứ' + (i + 1) + ':');
+    }
+    let arr2 = [];
+    for(let i = 0; i < 10; i++) {
+        arr[i] = prompt('Phần tử thứ' + (i + 1) + ':');
+    }
 
-    var Ar2 = [];
-    Ar2[0] = parseInt(prompt('Nhập phần tử 0'));
-    Ar2[1] = parseInt(prompt('Nhập phần tử 1'));
-    Ar2[2] = parseInt(prompt('Nhập phần tử 2'));
-    Ar2[3] = parseInt(prompt('Nhập phần tử 3'));
-    Ar2[4] = parseInt(prompt('Nhập phần tử 4'));
-    Ar2[5] = parseInt(prompt('Nhập phần tử 5'));
-    Ar2[6] = parseInt(prompt('Nhập phần tử 6'));
-    Ar2[7] = parseInt(prompt('Nhập phần tử 7'));
-    Ar2[8] = parseInt(prompt('Nhập phần tử 8'));
-    Ar2[9] = parseInt(prompt('Nhập phần tử 9'));
-
-    let Ar3 = Ar1.concat(Ar2);
-    document.writeln(c);
+    let arr3 = arr1.concat(arr2);
+    document.writeln(arr3);
 </script>
 </body>
 </html>

@@ -6,21 +6,14 @@
 </head>
 <body>
 <script>
-    var Ar = [];
-    Ar[0] = parseInt(prompt('Nhập phần tử 0'));
-    Ar[1] = parseInt(prompt('Nhập phần tử 1'));
-    Ar[2] = parseInt(prompt('Nhập phần tử 2'));
-    Ar[3] = parseInt(prompt('Nhập phần tử 3'));
-    Ar[4] = parseInt(prompt('Nhập phần tử 4'));
-    Ar[5] = parseInt(prompt('Nhập phần tử 5'));
-    Ar[6] = parseInt(prompt('Nhập phần tử 6'));
-    Ar[7] = parseInt(prompt('Nhập phần tử 7'));
-    Ar[8] = parseInt(prompt('Nhập phần tử 8'));
-    Ar[9] = parseInt(prompt('Nhập phần tử 9'));
-    var x = parseInt(prompt('Nhập số V'));
-    for (let i =0; i < Ar.length; i++ ){
-        if(x == Ar[i]){
-            delete Ar[i];
+    let arr = [];
+    let dodai = parseInt(prompt('Nhập vào độ dài của mảng'));
+    for(let i = 0; i < dodai; i++){
+        arr[i] = prompt('Phần tử thứ' + (i+1) + ':');
+    }
+    for (let i =0; i < arr.length; i++ ){
+        if(x == arr[i]){
+            delete arr[i];
         }
     }
 

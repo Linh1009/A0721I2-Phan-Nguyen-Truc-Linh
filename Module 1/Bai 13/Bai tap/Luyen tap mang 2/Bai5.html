@@ -6,12 +6,22 @@
 </head>
 <body>
 <script>
-var str1 = parseInt(prompt('nhập chuỗi 1'));
-var str2 = parseInt(prompt('nhập chuỗi 2'));
-let arr1 = str1.split(' ');
-let arr2 = str2.split(' ');
-if(arr1 === arr2){
-    document.writeln('tue');
+    let arr1 = [];
+    let dodai1 = parseInt(prompt('Nhập vào độ dài của mảng'));
+    for(let i = 0; i < dodai1; i++){
+        arr1[i] = prompt('Phần tử thứ' + (i+1) + ':');
+    }
+
+    let arr2 = [];
+    let dodai2 = parseInt(prompt('Nhập vào độ dài của mảng'));
+    for(let i = 0; i < dodai2; i++){
+        arr2[i] = prompt('Phần tử thứ' + (i+1) + ':');
+    }
+if( arr1 == arr2){
+    alert('Hai mảng này giống nhau');
+}
+else {
+    alert('Hai mảng này không giống nhau');
 }
 </script>
 </body>
