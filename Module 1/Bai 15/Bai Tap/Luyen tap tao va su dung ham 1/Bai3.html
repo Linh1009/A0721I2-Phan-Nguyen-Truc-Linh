@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+    function functionnumber(a, b) {
+        if(a > b){
+            alert('Nhập vào hai số khác')
+        }
+        if(a < b){
+            return a + b;
+        }
+
+    }
+    let x = functionnumber(20, 6);
+    document.getElementById('demo').innerHTML = 'Kết quả là: ' + x;
+</script>
+</body>
+</html>

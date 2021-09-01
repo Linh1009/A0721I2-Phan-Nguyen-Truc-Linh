@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let ngoisao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomsao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function functionstar(star) {
+        for (let i=0; i<ngoisao.length; i++){
+            if(star == ngoisao[i]){
+                return chomsao[i];
+            }
+        }
+
+    }
+    let number = parseInt(prompt('Nhập giá trị: '));
+    let result = functionstar(number);
+    alert(result);
+
+</script>
+</body>
+</html>
