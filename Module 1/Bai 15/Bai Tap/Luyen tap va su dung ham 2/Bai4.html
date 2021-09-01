@@ -7,21 +7,20 @@
 <body>
 <script>
     function isNumeric(num){
-        if(num ){
-            if (num.toFixed) {
+            if (!isNaN(num)) {
                 return true;
             } else {
                 return false;
             }
 
-        }
     }
-    let number = parseInt(prompt('Nhập số cần kiểm tra: '));
-    if(isprimeNumber(number)){
-        alert('Đây là số nguyên tố');
+    let number = parseInt(prompt('Nhập kí tự cần kiểm tra: '));
+    if(isNumeric(number)){
+        alert('True');
     }
     else {
-        alert('Đây không phải là số nguyên tố');
+        alert('False')
+    }
 
 </script>
 </body>
