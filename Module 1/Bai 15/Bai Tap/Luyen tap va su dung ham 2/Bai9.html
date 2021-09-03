@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 9</title>
+</head>
+<body>
+ <script>
+     function kiemTra(string, x) {
+         var arr1 = string.split("");
+         let count = 0;
+         if(arr1.includes(x)) {
+             for(let i =0; i < arr1.length; i++){
+                 if(arr1[i] == x){
+                     count += 1;
+                 }
+             }
+             return count;
+         }
+         else {
+             alert('-1');
+         }
+
+     }
+     let mang = prompt('Nhập vào mảng kí tự');
+     let x = prompt('Nhập vào kí tự');
+     let y = kiemTra(mang, x);
+     alert(y);
+
+ </script>
+</body>
+</html>

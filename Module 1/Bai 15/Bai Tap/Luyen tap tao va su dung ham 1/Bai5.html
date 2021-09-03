@@ -10,13 +10,13 @@
     let chomsao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
     function functionstar(star) {
         for (let i=0; i<ngoisao.length; i++){
-            if(star == ngoisao[i]){
+            if(star === ngoisao[i]){
                 return chomsao[i];
             }
         }
 
     }
-    let number = parseInt(prompt('Nhập giá trị: '));
+    let number = prompt('Nhập giá trị: ');
     let result = functionstar(number);
     alert(result);
 
