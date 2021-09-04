@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 11</title>
+</head>
+<body>
+<script>
+    let thue = 0;
+    let x = parseInt(prompt('Nhập số tiền lương của bạn'));
+    if(x <= 6000000){
+        thue = x * 0.01;
+    }
+    if(x>6000000 && x <= 10000000){
+        thue = x * 0.02;
+
+    }
+    if(x>10000000 && x<= 20000000){
+        thue = x * 0.03;
+
+    }
+    if(x>20000000){
+        thue = x * 0.04;
+    }
+    alert('Số tiền thuế của bạn là là: ' + thue);
+
+
+</script>
+</body>
+</html>

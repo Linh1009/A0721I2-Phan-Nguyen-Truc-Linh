@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 10</title>
+</head>
+<body>
+<script>
+    let tienDien = 0;
+    let x = parseInt(prompt('Nhập số kwh điện sử dung:'));
+    if(x>0 && x<50){
+        tienDien = x * 1.678;
+    }
+    if(x>51 && x< 100){
+        tienDien = x * 1.734;
+
+    }
+    if(x>101 && x< 200){
+        tienDien = x * 2.014;
+
+    }
+    alert('Số tiền bạn phải trả là: ' + tienDien);
+
+</script>
+</body>
+</html>
