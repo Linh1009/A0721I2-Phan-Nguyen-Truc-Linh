@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    for(var row=0; row<=5; row ++){
+        for(var col=0; col<=6; col++){
+            if(((col%3 != 0) && (row ==0)) || ((col%3 == 0) && (row == 1))){
+             document.writeln('*&nbsp');
+            }
+            else if(row-col == 2 || row+col == 8){
+                document.writeln('*&nbsp');
+            }
+            else {
+                document.writeln('&nbsp&nbsp');
+            }
+        }
+        document.writeln('<br>');
+    }
+</script>
+</body>
+</html>

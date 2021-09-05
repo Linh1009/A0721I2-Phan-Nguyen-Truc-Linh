@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let x;
+    do {
+        x = parseInt(prompt('Nhập số'));
+        if (x%3 == 0 && x%5 == 0){
+            alert('FuzzBuzz');
+        }
+        else if (x%5 == 0){
+            alert('Buzz');
+        }
+        else if (x%3 == 0){
+            alert('Fuzz');
+        }
+        else {
+            alert('Bạn vui lòng nhập số khác');
+        }
+
+    }
+    while (x>1 && x<100);
+</script>
+</body>
+</html>
