@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(nhietDo) {
+            this.nhietDo = nhietDo
+        }
+        chuyenCsangF(nhietdo){
+            let doF = (nhietdo * 1.8) + 32;
+            document.writeln('Nhiêt độ F là: ' + doF);
+        }
+        chuyenCsangK(nhietdo){
+            let doK = nhietdo + 273.15;
+            document.writeln('Nhiệt độ K là: ' + doK);
+
+        }
+
+    }
+    let nhietDo = new Temperature()
+    nhietDo.chuyenCsangF(25);
+    document.writeln('<br>');
+    nhietDo.chuyenCsangK(25);
+
+</script>
+</body>
+</html>

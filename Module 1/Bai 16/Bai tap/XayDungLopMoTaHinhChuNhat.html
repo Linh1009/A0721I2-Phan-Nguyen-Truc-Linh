@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<canvas id="canvas" style="border: 1px solid black" width="400px" height="200px"></canvas>
+<script>
+class Rectangle {
+    constructor(lenght, width) {
+        this.lenght = lenght;
+        this.width = width;
+    }
+    dienTich(lenght, width){
+        let result1 = lenght*width;
+        document.writeln('Diện tích hình chữ nhật là' + result1);
+
+    }
+    chuVi(lenght, width){
+        let result2 = (lenght + width)*2
+        document.writeln('Chu vi hình chữ nhật là' + result2);
+    }
+    veHinh(length, width){
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = red;
+        ctx.fillRect(100, 50, length, width);
+        let canvas = document.getElementById("canvas");
+
+    }
+}
+let hinh = new Rectangle();
+hinh.chuVi(200, 300);
+hinh.dienTich(200, 300);
+hinh.veHinh(200, 300);
+
+</script>
+</body>
+</html>
