@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let arr1 = [1, 2, 3, 4];
+    let arr2 = [3, 4, 2, 5];
+    let max = 0;
+    let index = 0;
+    let number = 0;
+    for (let i = 0; i<arr1.length; i++){
+        number = arr1[i] / arr2[i];
+        if(number > max ){
+            max = number;
+            index = i;
+        }
+    }
+    document.writeln('Phân số lớn nhất là: ' + max + '<br>');
+    document.writeln('Chỉ số là: ' + index);
+
+</script>
+</body>
+</html>

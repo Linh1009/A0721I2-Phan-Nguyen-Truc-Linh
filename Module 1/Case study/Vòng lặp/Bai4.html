@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let n = 4;
+    let m = 4;
+    for (let i=0; i<=4; i++){
+        for(let j= 0;j<= 8;j++){
+            if(j == n || j == m || i==4){
+                document.writeln('*');
+            }
+            else {
+                document.writeln('&nbsp&nbsp');
+            }
+        }
+        m--;
+        n++;
+        document.writeln('<br>');
+        console.log(n);
+    }
+</script>
+</body>
+</html>

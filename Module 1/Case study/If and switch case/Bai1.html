@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<label>Nhập tiền lương của bạn<input type="number" id="luong"></label></br>
+<button type="button" onclick="luong()">Kết quả</button>
+<p id="result1"></p>
+<p id="result2"></p>
+
+<script>
+function luong() {
+    let money = document.getElementById('luong').value;
+    let luongRong = 0;
+    let thue = 0;
+    if(money == 15000000){
+        thue = money * 0.2;
+        luongRong = money - thue;
+        document.getElementById('result1').innerHTML='Thuế của bạn là: '+thue;
+        document.getElementById('result2').innerHTML='Lương của bạn là: '+luongRong;
+    }
+    else if (7000000 <= money < 15000000){
+        thue = money * 0.1;
+        luongRong = money - thue;
+        document.getElementById('result1').innerHTML='Thuế của bạn là: '+thue;
+        document.getElementById('result2').innerHTML='Lương của bạn là: '+luongRong;
+
+    }
+    else if (money < 7000000){
+        thue = money * 0.05;
+        luongRong = money - thue;
+        document.getElementById('result1').innerHTML='Thuế của bạn là: '+thue;
+        document.getElementById('result2').innerHTML='Lương của bạn là: '+luongRong;
+
+    }
+    else {
+        alert('Bạn vui lòng nhập lại số khác');
+    }
+}
+
+</script>
+</body>
+</html>

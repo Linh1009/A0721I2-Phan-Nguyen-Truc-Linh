@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<br>
+<label>Nhập kí tự cần kiểm tra<input type="text" id="kiTu"></label></br>
+<button type="button" onclick="myFunction()">Kết quả</button>
+<p id="result"></p>
+<script>
+    function myFunction() {
+        let check = document.getElementById('kiTu');
+        switch (check.value) {
+            case 'o':
+            case 'O':
+            case 'u':
+            case 'U':
+            case 'i':
+            case 'I':
+            case 'a':
+            case 'A':
+            case 'e':
+            case 'E':
+                document.getElementById('result').innerHTML = 'Đây là nguyên âm';
+                break;
+            default: {
+                document.getElementById('result').innerHTML= 'Đây là phụ âm';
+                break;
+            }
+
+        }
+
+    }
+</script>
+</body>
+</html>
