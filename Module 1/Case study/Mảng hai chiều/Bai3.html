@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [1, 2, 4, 3, 5, 6, 7], [11, 12, 13, 14, 15, 16]
+    ];
+    let max = 0;
+    let min = 100 ;
+    for(let i= 0; i< arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if(arr[i][j] > max){
+                max = arr[i][j];
+            }
+            if(arr[i][j]< min){
+                min = arr[i][j];
+            }
+        }
+    }
+    document.writeln('Giá trị lớn nhất của mảng là: ' +max + '<br>');
+    document.writeln('Giá trị nhỏ nhất của mảng là: ' + min);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let str1 = prompt('Nhập chuỗi1:');
+    let arr1 = str1.split('');
+    let str2 = prompt('Nhập chuỗi1:');
+    let arr2 = str2.split('');
+    let check = [];
+    let ketqua = "";
+    let count = 0;
+    for(let i = 0; i< arr1.length; i++){
+        for(let j = 0; j<arr2.length; j++){
+            if(arr1[i] === arr2[j] && check[j] == undefined){
+                check[j] = true;
+                count++;
+                ketqua += arr2[j] + ',';
+                break;
+            }
+        }
+    }
+    document.writeln('Số kí tự khác nhau là: ' + count + '<br>');
+    document.writeln('Các kí tự khác nhau là: ' + ketqua);
+
+
+</script>
+</body>
+</html>
