@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phát triển chương trình sử dụng remote</title>
+</head>
+<body>
+<script>
+    class Remote {
+        constructor() {
+            this.code = 0;
+            this.volume = 0;
+            this.status = false;
+        }
+        setCode(code){
+            this.code = code;
+        }
+        setVolume(volume){
+            this.volume = volume;
+        }
+        setStatus(status){
+            this.status = status;
+        }
+
+
+    }
+    class Television {
+        constructor(channel, volume, status) {
+            this.channel = channel;
+            this.volume = volume;
+            this.status = status;
+        }
+        setChannel(remote){
+            this.channel = remote.code;
+        }
+        setVolume(volume){
+            this.volume += volume;
+        }
+        turnOn_TurnOff(){
+            this.status = !this.status;
+        }
+        checkPower(){
+            if (this.status){
+                console.log("TV đã bật")
+            } else console.log("TV đã tắt ")
+        }
+    }
+
+</script>
+
+</body>
+</html>
