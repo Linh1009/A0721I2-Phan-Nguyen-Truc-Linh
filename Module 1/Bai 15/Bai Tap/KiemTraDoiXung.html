@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra đối xứng</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập vô chuỗi kiểm tra");
+     function isPalindrome(string){
+         for (let i = 0; i < string.length / 2; i++){
+             if (string[i] !== string[string.length-1-i]){
+                 return false;
+             }
+         }
+         return true;
+     }
+     alert(isPalindrome(string));
+
+</script>
+
+</body>
+</html>

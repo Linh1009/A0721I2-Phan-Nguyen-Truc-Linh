@@ -8,28 +8,23 @@
 <script>
     function isprimeNumber(checkNumber) {
         let count = 0;
-        for(let i = 1; i <= checkNumber; i++){
-            if(checkNumber % i === 0){
-                count++
+        for (let i = 1; i <= checkNumber; i++) {
+            if (checkNumber % i === 0) {
+                count++;
             }
         }
-        if(count === 2){
+        if (count === 2) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
 
     }
-    let number = parseInt(prompt('Nhập số cần kiểm tra: '));
-    if(isprimeNumber(number)){
-        alert('Đây là số nguyên tố');
+    for(let i = 1 ; i < 10000; i++){
+        if (isprimeNumber(i)){
+            document.writeln(i + ',');
+        }
     }
-    else {
-        alert('Đây không phải là số nguyên tố');
-    }
-
-
 </script>
 </body>
 </html>
