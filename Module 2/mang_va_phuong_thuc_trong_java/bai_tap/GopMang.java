@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class GopMang {
     public static void main(String[] args) {
         int[] array1 = {1, 2, 3};
-        int[] array2 = {7, 9, 8};
+        int[] array2 = {7, 9, 8, 10};
         int[] array3 = new int[array1.length + array2.length];
         int pos = 0;
         for(int i : array1){
