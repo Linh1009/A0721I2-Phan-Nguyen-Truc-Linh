@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let sum = 0;
+    let result = 0;
+    let count = 0;
+    for(let i = 0; i <= 7; i++) {
+        arr1[i] = parseInt(prompt('Phần tử thứ' + (i + 1) + ':'));
+    }
+    for(let i = 0 ; i< arr1.length; i++){
+        if(arr1[i] % 2 || 0 && i%2 === 0){
+            sum += arr1[i];
+            count ++;
+        }
+    }
+    result = sum / count;
+document.writeln('Trung bình cộng là: ' + result);
+</script>
+</body>
+</html>

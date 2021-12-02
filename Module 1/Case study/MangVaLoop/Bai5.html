@@ -5,6 +5,56 @@
     <title>Bài 5</title>
 </head>
 <body>
+<ol>
+    <li>Cafe</li>
+    <li>Cam vắt</li>
+    <li>Nước ép cà rốt</li>
+    <li>Nước ép cà chua</li>
+    <li>Nước lọc</li>
+    <li>Nước dừa</li>
 
+</ol>
+<script>
+    let result = 0;
+    let x;
+    let money =0;
+    do {
+            x = parseInt(prompt('Vui lòng lựa chon thức uống'));
+            if(x === 1){
+                alert('Giá 10');
+                let soluong1 = parseInt(prompt('Nhập số lượng'));
+                money = soluong1 * 10;
+            }
+            if(x === 2){
+                alert('Giá 11');
+                let soluong2 = parseInt(prompt('Nhập số lượng'));
+                money = soluong2 * 11;
+            }
+            if(x === 3){
+                alert('Giá 12');
+                let soluong3 = parseInt(prompt('Nhập số lượng'));
+                money = soluong3 * 12;
+            }
+            if(x=== 4){
+                alert('Giá 13');
+                let soluong4 = parseInt(prompt('Nhập số lượng'));
+                money = soluong4 * 13;
+            }
+            if(x===5){
+                alert('Giá 14');
+                let soluong5 = parseInt(prompt('Nhập số lượng'));
+                money = soluong5 * 14;
+            }
+            if(x===6){
+                alert('Giá 15');
+                let soluong6 = parseInt(prompt('Nhập số lượng'));
+                money = soluong6 * 15;
+            }
+            result += money;
+        }
+    while (x != 7);
+        document.writeln(result);
+
+</script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    function myfunction(a, b) {
+        let arr = [];
+        let sum = 0;
+        for(let i = 0; i<a; i++){
+            if(a%i === 0){
+                sum += i;
+                console.log(sum);
+            }
+        }
+        if(sum === b){
+            return true
+        }
+        else {
+            return false;
+        }
+
+    }
+    let number1 = parseInt(prompt('Please input number1: '));
+    let number2 = parseInt(prompt('Please input number2: '));
+
+    if (myfunction(number1 , number2)) {
+        alert('true');
+    } else {
+        alert('false');
+    }
+</script>
+</body>
+</html>

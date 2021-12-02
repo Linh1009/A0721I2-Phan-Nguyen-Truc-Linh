@@ -8,20 +8,20 @@
 <canvas id="canvas" style="border: 1px solid black" width="400px" height="200px"></canvas>
 <script>
 class Rectangle {
-    constructor(lenght, width) {
-        this.lenght = lenght;
-        this.width = width;
+    constructor() {
+        this.lenght = 100;
+        this.width = 200;
     }
-    dienTich(lenght, width){
+    dienTich(){
         let result1 = lenght*width;
         document.writeln('Diện tích hình chữ nhật là' + result1);
 
     }
-    chuVi(lenght, width){
+    chuVi(){
         let result2 = (lenght + width)*2
         document.writeln('Chu vi hình chữ nhật là' + result2);
     }
-    veHinh(length, width){
+    veHinh(){
         let ctx = canvas.getContext("2d");
         ctx.fillStyle = red;
         ctx.fillRect(100, 50, length, width);
@@ -30,10 +30,7 @@ class Rectangle {
     }
 }
 let hinh = new Rectangle();
-hinh.chuVi(200, 300);
-hinh.dienTich(200, 300);
-hinh.veHinh(200, 300);
-
+hinh.dienTich();
 </script>
 </body>
 </html>

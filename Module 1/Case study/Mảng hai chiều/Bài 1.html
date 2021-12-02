@@ -6,7 +6,29 @@
 </head>
 <body>
 <script>
+    let n = parseInt(prompt('Nhập giá trị n'));
+    let m = parseInt(prompt('Nhập giá trị m'));
+    let sum = 0;
+    var numbers = [];
 
+    for (var i = 0; i < n; i++){
+        numbers[i] = [];
+        for (var j = 0; j < m; j++){
+            numbers[i][j] = j;
+        }
+    }
+    function tong() {
+        for(let i= 0;i<n; i++){
+            for(let j = 0; j<m ; j++){
+                if(numbers[i][j] % 2 == 0){
+                    sum += numbers[i][j];
+                }
+            }
+        }
+        return sum;
+    }
+let x = tong();
+    document.writeln(x);
 </script>
 </body>
 </html>

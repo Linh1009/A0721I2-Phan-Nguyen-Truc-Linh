@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chỉ có trong A không có trong B</title>
+</head>
+<body>
+<script>
+    let arrA = [];
+    let arrB = [];
+    let result = [];
+    let sizeA = parseInt(prompt('Nhập vào mảng arrA'));
+    for(let i = 0; i< sizeA; i++){
+        arrA.push(parseInt(prompt('nhập vào phần tử trong mảng A')));
+    }
+    let sizeB = parseInt(prompt('Nhập vào mảng arrB'));
+    for(let i = 0; i< sizeB; i++){
+        arrB.push(parseInt(prompt('nhập vào phần tử trong mảng B')));
+    }
+    for (let i = 0; i < sizeB;i ++){
+        if(arrA.indexOf(arrB[i]) === -1 && result.indexOf(arrB[i]) === -1){
+            result.push(arrB[i]);
+        }
+    }
+    result.sort(function (a, b) {return a - b
+
+    })
+alert(result);
+
+
+</script>
+</body>
+</html>

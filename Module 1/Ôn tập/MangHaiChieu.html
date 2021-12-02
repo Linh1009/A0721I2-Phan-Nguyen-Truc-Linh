@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng hai chiều</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt('Nhập vào số dòng'));
+    let n = parseInt(prompt('Nhập vào số cột'));
+    let arr = [];
+    for (let i =0 ; i<m ; i++){
+        let row = [];
+        for(let j = 0; j<n; j++){
+            row[j] = parseInt(prompt('Nhập số vào ma trận'));
+        }
+        arr[i] = row;
+    }
+    console.log(arr);
+</script>
+</body>
+</html>

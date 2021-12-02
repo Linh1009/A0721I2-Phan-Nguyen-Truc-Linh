@@ -8,13 +8,18 @@
 <script>
     let arr = [1, 2, 3];
     let arrB = [];
-    for (let i = 0; i < arr.length; i++) {
-        arrB[i] = 0;
-        for (let j = 0; j < i + 1; j++) {
-            arrB[i] += arr[j];
-        }
+    let sum = 0;
+    for(let i=0; i<arr.length; i++ ){
+        sum += arr[i];
+        arrB.push(sum);
     }
     document.writeln(arrB)
 </script>
 </body>
 </html>
+for (let i = 0; i < arr.length; i++) {
+arrB[i] = 0;
+for (let j = 0; j < i + 1; j++) {
+arrB[i] += arr[j];
+}
+}

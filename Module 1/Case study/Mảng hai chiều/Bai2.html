@@ -6,44 +6,38 @@
 </head>
 <body>
 <script>
-    let arr = [
-        [2, 5, 7], [11]
-    ];
-    let x = 0;
-    let count = 0;
-    let result = "";
-    for(let i= 0; i< arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            for (let k = 1; k <= arr[i][j]; k++) {
-                if (arr[i][j] % k === 0) {
-                    count++;
-                }
-                console.log(count);
-
-                if (count == 2) {
-                    x++;
-                    result += arr[i][j] + ',';
-                }
-
+    function isprimeNumber(checkNumber) {
+        let count = 0;
+        for(let i = 1; i <= checkNumber; i++){
+            if(checkNumber % i === 0){
+                count++
             }
         }
-    }
-    function check(){
-        for (let k = 1; k <= arr[i][j]; k++) {
-            if (arr[i][j] % k === 0) {
-                count++;
-            }
-            console.log(count);
+        if(count === 2){
+            return true;
+        }
+        else {
+            return false;
+        }
 
-            if (count == 2) {
-                x++;
+    }
+    let arr = [
+        [1, 2, 3, 4, 5, 6, 7], [11, 12, 13, 14, 15]
+    ];
+    let count = 0;
+    let result = '';
+    for(let i = 0; i<arr.length; i++){
+        for(let j=0; j<arr[i].length; j++) {
+            if ((isprimeNumber(arr[i][j]))) {
+                count++;
                 result += arr[i][j] + ',';
             }
-
         }
-
-
     }
+    document.writeln('Có tổng ' +count + ' nguyên tố trong mảng' + '<br>');
+    document.writeln('Các số nguyên tố có trong mảng là:' + result);
+
+
 
 </script>
 </body>
